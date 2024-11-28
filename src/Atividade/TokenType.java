@@ -1,7 +1,22 @@
 package Atividade;
 
 public enum TokenType {
-    PLUS, MINUS, EQ, SEMICOLON,
-    NUMBER, IDENT, LET, PRINT, EOF
+    // Simbolos
+    PLUS, MINUS, ASTERISK, SLASH,
+    LT, GT, EQ, SEMICOLON,
+    LPAREN, RPAREN, LBRACE, RBRACE,
+
+    //"tipos"
+    NUMBER, IDENT, STRING,
+
+    //palavras-chave
+    CLASS, CONSTRUCTOR, FUNCTION, METHOD,
+    FIELD, STATIC, VAR, CHAR,
+    BOOLEAN, VOID, TRUE, FALSE,
+    NULL, THIS, LET, DO, IF,
+    ELSE, RETURN, PRINT, WHILE,
+
+
+    EOF
 }
 

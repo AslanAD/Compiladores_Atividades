@@ -3,12 +3,17 @@ package Atividade;
 public class Main {
     public static void main(String[] args) {
         String input = """
-            let a = 42 + 5 - 8;
-            let b = 56 + 8;
-            print a + b + 6;
-        """;
+              if (x < 0) {
+                  // prints the sign
+                  let sign = "negative";
+              }
+              """;
 
-        Parser parser = new Parser(input.getBytes());
-        parser.parse();
+        Scanner scan = new Scanner(input.getBytes());
+        System.out.println("<tokens>");
+        for (Token tk = scan.nextToken(); tk.type != TokenType.EOF; tk = scan.nextToken()) {
+            System.out.println(tk);
+        }
+        System.out.println("</tokens>");
     }
 }
